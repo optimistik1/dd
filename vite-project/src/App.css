@@ -3,40 +3,39 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Занимает всю высоту экрана */
+  min-height: 100vh; 
 }
 
 main {
-  flex: 1; /* Основной контент занимает все доступное пространство */
-  padding: 20px; /* Отступы вокруг контента */
-  display: flex;         /* Добавляем flex контейнер для центрирования */
-  flex-direction: column; /* Размещаем элементы вертикально */
-  justify-content: center; /* Центрируем по вертикали */
-  align-items: center;    /* Центрируем по горизонтали */
+  flex: 1; 
+  padding: 20px; 
+  display: flex;         
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;    
 }
 
 .header {
-  position: fixed; /* Фиксированное позиционирование */
-  top: 0; /* Прилипает к верху экрана */
-  left: 0; /* Добавлено, чтобы header занимал всю ширину */
-  width: 100%; /* Добавлено, чтобы header занимал всю ширину */
-  z-index: 100; /* Убедитесь, что header поверх остального контента */
+  position: fixed; 
+  left: 0; 
+  width: 100%; 
+  z-index: 100; 
   background-color: #00a2ff; 
 }
 
 .footer {
-  position: fixed; /* Фиксированное позиционирование */
-  bottom: 0; /* Прилипает к низу экрана */
-  left: 0; /* Добавлено, чтобы footer занимал всю ширину */
-  width: 100%; /* Добавлено, чтобы footer занимал всю ширину */
-  z-index: 100; /* Убедитесь, что footer поверх остального контента */
+  position: fixed;
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 100; 
   background-color: #00b7ff; 
 }
 
 .page-content {
-  max-width: 800px; /* Или другое значение */
+  max-width: 800px;
   width: 100%;
-  text-align: center; /* Центрируем текст */
+  text-align: center; 
 }
 
 #root {

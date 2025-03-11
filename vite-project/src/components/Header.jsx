@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import Button from './Button'; // Импорт компонента Button
+import Button from './Button'; 
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
             <li><Link to="/blog">Поддержка</Link></li>
           </ul>
         </nav>
-        <Button text="Войти" onClick={() => alert("Вы вошли!")} /> {/* Пример использования Button */}
+        <Button text="Войти" onClick={() => alert("Вы вошли!")} /> 
       </div>
     </header>
   );
