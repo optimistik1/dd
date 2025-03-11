@@ -1,0 +1,19 @@
+/* Button.css */
+.button {
+    background-color: #000000; /* Черный фон */
+    color: white; /* Белый текст */
+    padding: 10px 20px;
+    border: 2px solid #00ff00; /* Зеленая обводка (2px толщиной) */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавное изменение цвета */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+  .button:hover {
+    background-color: #00ff00; /* Зеленый фон при наведении */
+    color: black; /* Черный текст при наведении */
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

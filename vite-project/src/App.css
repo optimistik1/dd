@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Занимает всю высоту экрана */
+}
+
+main {
+  flex: 1; /* Основной контент занимает все доступное пространство */
+  padding: 20px; /* Отступы вокруг контента */
+  display: flex;         /* Добавляем flex контейнер для центрирования */
+  flex-direction: column; /* Размещаем элементы вертикально */
+  justify-content: center; /* Центрируем по вертикали */
+  align-items: center;    /* Центрируем по горизонтали */
+}
+
+.header {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0; /* Прилипает к верху экрана */
+  left: 0; /* Добавлено, чтобы header занимал всю ширину */
+  width: 100%; /* Добавлено, чтобы header занимал всю ширину */
+  z-index: 100; /* Убедитесь, что header поверх остального контента */
+  background-color: #00a2ff; 
+}
+
+.footer {
+  position: fixed; /* Фиксированное позиционирование */
+  bottom: 0; /* Прилипает к низу экрана */
+  left: 0; /* Добавлено, чтобы footer занимал всю ширину */
+  width: 100%; /* Добавлено, чтобы footer занимал всю ширину */
+  z-index: 100; /* Убедитесь, что footer поверх остального контента */
+  background-color: #00b7ff; 
+}
+
+.page-content {
+  max-width: 800px; /* Или другое значение */
+  width: 100%;
+  text-align: center; /* Центрируем текст */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

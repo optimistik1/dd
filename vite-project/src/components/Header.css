@@ -1,0 +1,63 @@
+/* Header.css */
+.header {
+    background-color: #000000;
+    color: white;
+    /* padding: 0.5rem 1rem; !* Изначальное значение *! */
+    padding: 0.3rem 1rem; /* Уменьшаем верхний и нижний padding */
+    width: 100%;
+  }
+
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10 20px; !* Изначальное значение, вероятно, ошибка, т.к. только одно значение *! */
+    padding: 0 20px; /* Уменьшаем верхний и нижний padding */
+  }
+  
+  .header .logo {
+    /* Убираем стили для текста */
+    /* font-size: 2.2rem;
+    font-weight: bolder;
+    color: rgb(0, 255, 13);
+    text-decoration: none; */
+    display: block; /*  Убираем пробел под картинкой */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+  .header .logo img {
+    height: 50px; /*  Задаем высоту картинки */
+    width: auto;  /*  Сохраняем пропорции */
+    display: block;  /*  Убираем пробел под картинкой */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /*  Уменьшаем расстояние между ссылками, изначально 30px*/
+    margin: 0; /* Добавляем, чтобы убрать стандартные отступы */
+    padding: 0; /* Добавляем, чтобы убрать стандартные отступы */
+  }
+  
+  .header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem; /* Немного уменьшаем размер шрифта ссылок */
+  }
+  
+  .header nav a:hover {
+    color: #3cff00;
+  }
+
+  /*стили для нав бара*/
+  .header nav {
+    /* position: static; Убираем эти стили */
+    /* top: 0; */
+    margin-left: auto; /* Добавляем это */
+    margin-right: 20px;
+  }

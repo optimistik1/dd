@@ -1,0 +1,43 @@
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer nav li {
+    margin: 0;
+  }
+  
+  .footer nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer nav a:hover {
+    color: #00ff2f;
+  }
